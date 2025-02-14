@@ -3,7 +3,7 @@ import BorderHighlight from "./BorderHighlight";
 export default function Hero() {
   return (
     <BorderHighlight
-      id={"hero"}
+      id="hero"
       className={
         "relative flex flex-col items-start justify-center w-full lg:w-fit sm:min-w-[380px]  h-[560px] min-h-[560px] border border-[#3d3d3d] p-10 rounded-md overflow-hidden"
       }

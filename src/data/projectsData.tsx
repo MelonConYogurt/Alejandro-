@@ -110,7 +110,7 @@ export const projects = [
       Tecnologies.HTML,
       Tecnologies.REACT,
     ],
-    repo: new URL("https://github.com/MelonConYogurt/react-portfolio-blog-0"),
+    repo: new URL("https://github.com/MelonConYogurt/frontend-blog"),
     video: new URL(
       "https://www.youtube.com/watch?v=PutSwK-Zsnc&t=2s&ab_channel=AlejandroVg"
     ),
@@ -136,7 +136,7 @@ export const projects = [
       Tecnologies.REACT,
     ],
     repo: new URL(
-      "https://github.com/MelonConYogurt/Tabla-paginada-y-filtrada-con-sql-python-react"
+      "https://github.com/MelonConYogurt/Tabla-paginada-y-filtada-con-sql-pyhton-react"
     ),
     video: new URL("https://www.youtube.com/watch?v=r6aSZQ_WMvU"),
   },
