@@ -1,0 +1,38 @@
+---
+import "../styles/global.css";
+import NavBar from "../components/navBar";
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/hero";
+import Studies from "../components/education";
+import AllProjects from "../components/projects";
+import Information from "../components/information";
+import Skills from "../components/skills";
+import SobreMi from "../components/sobreMi";
+import Footer from "../components/footer";
+---
+
+<Layout>
+  <!-- <Background client:load /> -->
+  <div class="flex justify-center w-full px-4 md:px-6 lg:px-8 mt-30">
+    <main
+      class="flex flex-col items-center justify-center w-full max-w-[1720px] gap-10"
+    >
+      <NavBar client:load />
+      <section class="flex flex-col lg:flex-row gap-10 justify-between w-full">
+        <Hero client:load />
+        <AllProjects client:load />
+      </section>
+      <section
+        class="flex flex-col lg:flex-row gap-10 justify-between items-center lg:items-stretch w-full"
+      >
+        <Studies client:load />
+        <Information client:load />
+      </section>
+      <section class="flex flex-col gap-10 w-full">
+        <Skills client:load />
+        <SobreMi client:load />
+      </section>
+    </main>
+  </div>
+  <Footer />
+</Layout>
