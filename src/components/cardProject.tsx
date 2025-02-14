@@ -17,7 +17,7 @@ export default function CardProject({data}: {data: Project}) {
           </p>
         </div>
         <div className="w-full overflow-x-auto scroll-behavior: smooth">
-          <ul className="flex flex-row gap-2 select-none">
+          <ul className="flex flex-row gap-2 select-none mb-2">
             {data.tecnologies.map((tech, index) => (
               <li
                 key={index}

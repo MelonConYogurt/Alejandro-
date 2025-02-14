@@ -48,7 +48,7 @@ export default function BorderHighlight({
       <div
         id="div-hidden"
         aria-hidden={true}
-        className="h-full w-full border border-gray-400  rounded-md overflow-hidden absolute top-0 left-0 transition-opacity duration-300"
+        className="h-full w-full border border-gray-400  rounded-md overflow-hidden absolute top-0 left-0 transition-opacity duration-300 pointer-events-none"
         style={{
           opacity,
           WebkitMaskImage: `radial-gradient(80% 50% at ${position.x}px ${position.y}px, black 45%, transparent)`,
