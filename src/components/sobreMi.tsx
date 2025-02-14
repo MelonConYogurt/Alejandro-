@@ -1,50 +1,11 @@
-import React, {useState} from "react";
+import BorderHighlight from "./BorderHighlight";
 
 function SobreMi() {
-  const [opacity, setOpacity] = useState(0);
-  const [position, setPosition] = useState({
-    x: -1000,
-    y: -1000,
-  });
-
-  function MouseMove(e: React.MouseEvent<HTMLElement>) {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setPosition({
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top,
-    });
-  }
-
-  function handleFocus() {
-    setOpacity(1);
-  }
-
-  function handleBlur() {
-    setPosition({
-      x: -1000,
-      y: -1000,
-    });
-    setOpacity(0);
-  }
-
   return (
-    <section
+    <BorderHighlight
       id="Sobremi"
       className="flex flex-col justify-center items-center border border-[#3d3d3d] p-10 rounded-md  w-full max-w-[1720px] relative"
-      onMouseMove={(e) => MouseMove(e)}
-      onMouseEnter={handleFocus}
-      onMouseLeave={handleBlur}
     >
-      <div
-        id="div-hidden"
-        aria-hidden={true}
-        className="pointer-events-none h-full w-full border border-gray-400  rounded-md overflow-hidden absolute top-0 left-0 "
-        style={{
-          opacity,
-          WebkitMaskImage: `radial-gradient(80% 50% at ${position.x}px ${position.y}px, black 45%, transparent)`,
-        }}
-      ></div>
-
       <h2 className="text-xl mb-10 text-gray-200">Sobre mi</h2>
       <div className="flex flex-col lg:flex-row justify-center items-start w-full max-w-6xl gap-20">
         <div className="flex flex-col items-start gap-4 p-2 w-full lg:w-1/2">
@@ -122,7 +83,7 @@ function SobreMi() {
           />
         </div>
       </div>
-    </section>
+    </BorderHighlight>
   );
 }
 

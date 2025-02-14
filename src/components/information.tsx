@@ -1,49 +1,11 @@
-import React, {useState} from "react";
+import BorderHighlight from "./BorderHighlight";
 
 function Information() {
-  const [opacity, setOpacity] = useState(0);
-  const [position, setPosition] = useState({
-    x: -1000,
-    y: -1000,
-  });
-
-  function MouseMove(e: React.MouseEvent<HTMLElement>) {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setPosition({
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top,
-    });
-  }
-
-  function handleFocus() {
-    setOpacity(1);
-  }
-
-  function handleBlur() {
-    setPosition({
-      x: -1000,
-      y: -1000,
-    });
-    setOpacity(0);
-  }
   return (
-    <section
+    <BorderHighlight
       id="Habilidades"
       className="flex flex-col justify-center items-center border border-[#3d3d3d] p-10 rounded-md max-w-7xl relative w-full"
-      onMouseMove={(e) => MouseMove(e)}
-      onMouseEnter={handleFocus}
-      onMouseLeave={handleBlur}
     >
-      <div
-        id="div-hidden"
-        aria-hidden={true}
-        className="h-full w-full border border-gray-400  rounded-md overflow-hidden absolute top-0 left-0 pointer-events-none"
-        style={{
-          opacity,
-          WebkitMaskImage: `radial-gradient(80% 50% at ${position.x}px ${position.y}px, black 45%, transparent)`,
-        }}
-      ></div>
-
       <div className="flex flex-col justify-center items-center gap-10 w-full">
         <div className="flex flex-row justify-between items-center w-full mb-5">
           <h2 className="text-xl text-gray-200">Habilidades y Servicios</h2>
@@ -171,7 +133,7 @@ function Information() {
           </div>
         </div>
       </div>
-    </section>
+    </BorderHighlight>
   );
 }
 
