@@ -5,7 +5,7 @@ export default function Hero() {
     <BorderHighlight
       id="hero"
       className={
-        "relative flex flex-col items-start justify-center w-full lg:w-fit sm:min-w-[380px]  h-[560px] min-h-[560px] border border-[#3d3d3d] p-10 rounded-md overflow-hidden"
+        "relative flex flex-col items-start justify-center w-full lg:w-[380px] sm:min-w-[380px]  h-[560px] min-h-[560px] border border-[#3d3d3d] p-10 rounded-md overflow-hidden"
       }
     >
       <div className="h-full w-full">
