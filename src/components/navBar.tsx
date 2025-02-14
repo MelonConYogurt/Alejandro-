@@ -5,7 +5,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className="fixed top-0 right-0 mx-5 z-50 bg-transparent border-0 ">
+      <nav className="fixed top-0 right-0  z-50 bg-transparent border-0 ">
         <div className="relative">
           <button
             className="w-full inline-flex justify-end py-4 px-2"
