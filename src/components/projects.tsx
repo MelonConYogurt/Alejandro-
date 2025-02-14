@@ -19,7 +19,10 @@ export default function AllProjects({
       } overflow-y-auto`}
     >
       <div className="flex flex-row justify-between items-center w-full mb-5  text-gray-200">
-        <h2>Proyectos</h2>
+        <div className="inline-flex justify-start items-start gap-1">
+          <h2>Proyectos</h2>
+          <p className="text-[0.8rem] text-gray-500 ">{`(${projects.length.toString()})`}</p>
+        </div>
         <a
           href={largePage ? "/" : "/projects"}
           className="inline-flex justify-center items-center gap-2"

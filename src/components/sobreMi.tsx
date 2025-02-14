@@ -31,7 +31,7 @@ function SobreMi() {
             </p>
           </div>
 
-          <div className="flex justify-center items-center gap-1">
+          <div className="flex justify-center items-center gap-2.5">
             <a href="https://github.com/MelonConYogurt">
               <svg
                 viewBox="0 0 256 250"
