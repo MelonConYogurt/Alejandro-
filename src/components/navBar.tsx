@@ -32,7 +32,7 @@ function NavBar() {
           {menu === true ? (
             <div
               onBlur={() => setMenu((prev) => !prev)}
-              className="absolute top-full right-2 bg-transparent backdrop-blur-2xl border border-[#3d3d3d] rounded-md z-20"
+              className="absolute top-full right-2 bg-[#171717] border border-[#3d3d3d] rounded-md z-20"
             >
               <div className="w-full">
                 <ul className="flex flex-col space-y-2  py-2">
