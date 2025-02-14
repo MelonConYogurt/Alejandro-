@@ -5,7 +5,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className="fixed top-0 right-0  z-50 bg-transparent border-0 ">
+      <nav className="fixed top-0 right-0 z-50 bg-transparent border-0">
         <div className="relative">
           <button
             className="w-full inline-flex justify-end py-4 px-2"
@@ -32,7 +32,7 @@ function NavBar() {
           {menu === true ? (
             <div
               onBlur={() => setMenu((prev) => !prev)}
-              className="absolute top-full right-0 bg-[#171717] border border-[#3d3d3d] rounded-md z-20"
+              className="absolute top-full right-2 bg-[#171717] border border-[#3d3d3d] rounded-md z-20"
             >
               <div className="w-full">
                 <ul className="flex flex-col space-y-2  py-2">

@@ -19,7 +19,7 @@ export const projects = [
   {
     title: "🚗 Renta de Autos",
     description:
-      "⚙️ Plataforma innovadora para gestionar el alquiler de automóviles y reservas.",
+      "Plataforma innovadora para gestionar el alquiler de automóviles y reservas.",
     img: new URL(
       "https://res.cloudinary.com/divr5jb7h/image/upload/v1738798351/723_1x_shots_so_hkve5t.png"
     ),
@@ -45,7 +45,7 @@ export const projects = [
   {
     title: "📦 Inventario",
     description:
-      "📈 Sistema integral para la gestión de inventarios y gráficos interactivos.",
+      "Sistema integral para la gestión de inventarios y gráficos interactivos.",
     img: new URL(
       "https://res.cloudinary.com/divr5jb7h/image/upload/v1738798347/171_1x_shots_so_wkx804.png"
     ),
@@ -70,7 +70,7 @@ export const projects = [
   {
     title: "👟 Tienda Tennis",
     description:
-      "🛍️ Ecommerce minimalista con API RESTful gestionada a través de Strapi.",
+      "Ecommerce minimalista con API RESTful gestionada a través de Strapi.",
     img: new URL(
       "https://res.cloudinary.com/divr5jb7h/image/upload/v1738798348/64_1x_shots_so_bxgzky.png"
     ),
@@ -94,7 +94,7 @@ export const projects = [
   {
     title: "📝 Blog",
     description:
-      "💡 Blog y portafolio moderno construido con Next.js, React y Strapi.",
+      "Blog y portafolio moderno construido con Next.js, React y Strapi.",
     img: new URL(
       "https://res.cloudinary.com/divr5jb7h/image/upload/v1738798349/153_1x_shots_so_zo7mei.png"
     ),
@@ -118,7 +118,7 @@ export const projects = [
   {
     title: "📊 Tabla",
     description:
-      "🔢 Tabla interactiva con filtrado avanzado y backend optimizado en SQL y FastAPI.",
+      "Tabla interactiva con filtrado avanzado y backend optimizado en SQL y FastAPI.",
     img: new URL(
       "https://res.cloudinary.com/divr5jb7h/image/upload/v1738798561/144_1x_shots_so_u9307m.png"
     ),
@@ -143,7 +143,7 @@ export const projects = [
   {
     title: "🖥️ Inventario Desktop",
     description:
-      "👨🏻‍💻 Aplicación de escritorio en Python para gestionar inventarios con SQLite y operaciones CRUD.",
+      "Aplicación de escritorio en Python para gestionar inventarios con SQLite y operaciones CRUD.",
     img: new URL(
       "https://res.cloudinary.com/divr5jb7h/image/upload/v1738798353/844_1x_shots_so_pepr5u.png"
     ),
@@ -163,7 +163,7 @@ export const projects = [
   {
     title: "🕷️ Scraper",
     description:
-      "🔍 Herramienta automatizada en Python para la extracción de datos.",
+      "Herramienta automatizada en Python para la extracción de datos.",
     img: new URL(
       "https://res.cloudinary.com/divr5jb7h/image/upload/v1738798348/251_1x_shots_so_hfovcy.png"
     ),
@@ -183,7 +183,7 @@ export const projects = [
   {
     title: "🧾 Factura",
     description:
-      "📄 API que genera facturas PDF a partir de datos en JSON usando FastAPI y Puppeteer.",
+      "API que genera facturas PDF a partir de datos en JSON usando FastAPI y Puppeteer.",
     img: new URL(
       "https://res.cloudinary.com/divr5jb7h/image/upload/v1738798351/732_1x_shots_so_hv0lfg.png"
     ),
