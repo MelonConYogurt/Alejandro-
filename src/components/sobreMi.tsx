@@ -1,6 +1,10 @@
 import BorderHighlight from "./BorderHighlight";
+import {youtube} from "../data/youtubeData";
 
 function SobreMi() {
+  const randomIndex = Math.floor(Math.random() * youtube.length);
+  const videoData = youtube[randomIndex];
+
   return (
     <BorderHighlight
       id="Sobremi"
@@ -76,11 +80,14 @@ function SobreMi() {
         </div>
 
         <div className="mt-6 md:mt-0 w-full lg:w-1/2">
-          <img
-            src="https://res.cloudinary.com/divr5jb7h/image/upload/v1738692459/IMG-20230325-WA0056_obdgdr.jpg"
-            alt="Alejandro Vélez"
-            className="object-cover rounded-md"
-          />
+          <iframe
+            className="aspect-video rounded-sm w-full h-full"
+            src={videoData.url.toString()}
+            title={videoData.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
     </BorderHighlight>
