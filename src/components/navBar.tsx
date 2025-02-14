@@ -37,31 +37,31 @@ function NavBar() {
               <div className="w-full">
                 <ul className="flex flex-col space-y-2  py-2">
                   <a
-                    href="#hero"
+                    href="/#hero"
                     className="text-md p-2  text-gray-300 hover:text-gray-200 w-36 hover:bg-[#303030]"
                   >
                     🏠 Inicio
                   </a>
                   <a
-                    href="#Estudios"
+                    href="/#Estudios"
                     className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
                   >
                     📚 Estudios
                   </a>
                   <a
-                    href="#Habilidades"
+                    href="/#Habilidades"
                     className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
                   >
                     💪 Habilidades
                   </a>
                   <a
-                    href="#Proyectos"
+                    href="/#Proyectos"
                     className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
                   >
                     💻 Proyectos
                   </a>
                   <a
-                    href="#Sobremi"
+                    href="/#Sobremi"
                     className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
                   >
                     👨‍💻 Sobre mí

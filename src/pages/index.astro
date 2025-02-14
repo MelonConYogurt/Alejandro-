@@ -12,7 +12,6 @@ import Footer from "../components/footer";
 ---
 
 <Layout>
-  <!-- <Background client:load /> -->
   <div class="flex justify-center w-full px-4 md:px-6 lg:px-8 mt-30">
     <main
       class="flex flex-col items-center justify-center w-full max-w-[1720px] gap-10"
@@ -20,7 +19,7 @@ import Footer from "../components/footer";
       <NavBar client:load />
       <section class="flex flex-col lg:flex-row gap-10 justify-between w-full">
         <Hero client:load />
-        <AllProjects client:load />
+        <AllProjects largePage={false} quantity={6} client:load />
       </section>
       <section
         class="flex flex-col lg:flex-row gap-10 justify-between items-center lg:items-stretch w-full"

@@ -1,0 +1,28 @@
+---
+import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/footer";
+import NavBar from "../components/navBar";
+import AllProjects from "../components/projects";
+import {projects} from "../data/projectsData";
+---
+
+<Layout>
+  <NavBar client:load />
+  <div class="flex justify-center w-full px-4 md:px-6 lg:px-8 mt-30">
+    <main
+      class="flex flex-col items-center justify-center w-full max-w-[1720px] gap-10"
+    >
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <h1 class="text-4xl font-bold mb-4 text-gray-100">Mis Proyectos</h1>
+        <p class="text-gray-400">
+          Explora mi colección de proyectos. Cada uno representa un desafío
+          único y una oportunidad de aprendizaje.
+        </p>
+      </div>
+
+      <AllProjects largePage={true} quantity={projects.length} client:load />
+    </main>
+  </div>
+  <Footer />
+</Layout>

@@ -181,7 +181,7 @@ export const projects = [
     ),
   },
   {
-    title: "🧾 Factura",
+    title: "📝 Invoice",
     description:
       "API que genera facturas PDF a partir de datos en JSON usando FastAPI y Puppeteer.",
     img: new URL(
