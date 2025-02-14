@@ -30,7 +30,7 @@ function SobreMi() {
   return (
     <section
       id="Sobremi"
-      className="flex flex-col justify-center items-center border border-[#3d3d3d] p-10 rounded-md min-w-[380px] w-full max-w-[1720px] relative"
+      className="flex flex-col justify-center items-center border border-[#3d3d3d] p-10 rounded-md  w-full max-w-[1720px] relative"
       onMouseMove={(e) => MouseMove(e)}
       onMouseEnter={handleFocus}
       onMouseLeave={handleBlur}

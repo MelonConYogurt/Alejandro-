@@ -32,7 +32,7 @@ function Studies() {
   return (
     <section
       id="Estudios"
-      className="relative flex flex-col justify-center items-center lg:justify-start border border-[#3d3d3d] p-10 rounded-md w-full min-w-[380px] lg:w-fit "
+      className="relative flex flex-col justify-center items-center lg:justify-start border border-[#3d3d3d] p-10 rounded-md w-full  lg:w-fit "
       onMouseMove={(e) => MouseMove(e)}
       onMouseEnter={handleFocus}
       onMouseLeave={handleBlur}
