@@ -5,7 +5,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className="fixed top-0 right-0 mx-5 z-50 bg-transparent border-0 backdrop-blur-3xl backdrop-grayscale ">
+      <nav className="fixed top-0 right-0 mx-5 z-50 bg-transparent border-0 ">
         <div className="relative">
           <button
             className="w-full inline-flex justify-end py-4 px-2"
@@ -32,58 +32,46 @@ function NavBar() {
           {menu === true ? (
             <div
               onBlur={() => setMenu((prev) => !prev)}
-              className="absolute top-full right-0 bg-[#171717] border border-[#3d3d3d] p-10 rounded-md"
+              className="absolute top-full right-0 bg-[#171717] border border-[#3d3d3d] rounded-md z-20"
             >
               <div className="w-full">
-                <ul className="flex flex-col space-y-2">
-                  <li className="">
-                    <a
-                      href="#"
-                      className="text-md  text-gray-200 hover:border-b-1 hover:border-gray-200"
-                    >
-                      Inicio
-                    </a>
-                  </li>
-                  <li className="">
-                    <a
-                      href="#Estudios"
-                      className="text-md  text-gray-200 hover:border-b-1 hover:border-gray-200"
-                    >
-                      Estudios
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#Habilidades"
-                      className="text-md text-gray-200  hover:border-b-1 hover:border-gray-200"
-                    >
-                      Habilidades
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#Proyectos"
-                      className="text-md text-gray-200  hover:border-b-1 hover:border-gray-200"
-                    >
-                      Proyectos
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#Sobremi"
-                      className="text-md text-gray-200  hover:border-b-1 hover:border-gray-200"
-                    >
-                      Sobre mí
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:alejopsornal@gmail.com"
-                      className="text-md text-gray-200  hover:border-b-1 hover:border-gray-200"
-                    >
-                      Contacto
-                    </a>
-                  </li>
+                <ul className="flex flex-col space-y-2  py-2">
+                  <a
+                    href="#"
+                    className="text-md p-2  text-gray-300 hover:text-gray-200 w-36 hover:bg-[#303030]"
+                  >
+                    🏠 Inicio
+                  </a>
+                  <a
+                    href="#Estudios"
+                    className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
+                  >
+                    📚 Estudios
+                  </a>
+                  <a
+                    href="#Habilidades"
+                    className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
+                  >
+                    💪 Habilidades
+                  </a>
+                  <a
+                    href="#Proyectos"
+                    className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
+                  >
+                    💻 Proyectos
+                  </a>
+                  <a
+                    href="#Sobremi"
+                    className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
+                  >
+                    👨‍💻 Sobre mí
+                  </a>
+                  <a
+                    href="mailto:alejopsornal@gmail.com"
+                    className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
+                  >
+                    ✉️ Contacto
+                  </a>
                 </ul>
               </div>
             </div>

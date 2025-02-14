@@ -9,7 +9,23 @@ export default function AllProjects() {
     >
       <div className="flex flex-row justify-between items-center w-full mb-5  text-gray-200">
         <h2>Proyectos</h2>
-        <a href="">Ver mas</a>
+        <a href="" className="inline-flex justify-center items-center gap-2">
+          Ver todos
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.1rem"
+            height="1.1rem"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
       </div>
       <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-5">
         {projects.slice(0, 6).map((project, index) => (
