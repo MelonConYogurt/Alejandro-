@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer className="mt-30">
-      <div className="w-full p-5 md:flex md:items-center md:justify-between px-25">
+    <footer className="mt-30 w-full">
+      <div className="w-full py-5 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 sm:text-center ">
           Alejandro Velez Gomez 🦀
         </span>
