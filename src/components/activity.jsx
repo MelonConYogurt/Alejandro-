@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {motion} from "framer-motion";
 import {GitBranch, GitCommit, GitPullRequest, Star} from "lucide-react";
 import FetchRepos from "../utils/gitRepos";
+import BorderHighlight from "./BorderHighlight";
 
 export default function GitHubActivityTimeline() {
   const [repos, setRepos] = useState([]);
@@ -87,51 +88,62 @@ export default function GitHubActivityTimeline() {
           {repos.length > 0 ? (
             repos.map((repo, index) => (
               <motion.div
-                key={repo.id}
+                key={index}
                 initial={{opacity: 0, y: 20}}
                 animate={{opacity: 1, y: 0}}
-                transition={{delay: index * 0.1}}
-                className=" border border-[#3d3d3d]  p-4 rounded-lg overflow-hidden"
-                onClick={() => {
-                  console.log(repo.type);
-                }}
+                transition={{duration: 0.5, delay: index * 0.1}}
               >
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-md  text-white">{repo.name}</h3>
-                  <span className="text-sm text-gray-300">
-                    {repo.events} eventos
-                  </span>
-                </div>
-                <div className="w-full bg-gray-600 rounded-full h-2 mb-4">
-                  <div
-                    className="bg-white h-2 rounded-full"
-                    style={{width: `${(repo.events / totalEvents) * 100}%`}}
-                  ></div>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  <div className="inline-flex justify-center items-center text-gray-300 gap-1">
-                    <GitCommit className="text-white w-4 h-4" />
-                    {repo.type.PushEvent}
+                <BorderHighlight
+                  id="activity"
+                  key={repo.id}
+                  className=" border border-[#3d3d3d]  p-4 rounded-lg overflow-hidden relative"
+                  onClick={() => {
+                    console.log(repo.type);
+                  }}
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-md  text-white">{repo.name}</h3>
+                    <span className="text-sm text-gray-300">
+                      {repo.events} eventos
+                    </span>
                   </div>
-                  <div className="inline-flex justify-center items-center text-gray-300 gap-1">
-                    <GitBranch className="text-white  w-4 h-4" />
-                    {repo.type.CreateEvent}
+                  <div className="w-full bg-[#212121] rounded-full h-2 mb-4">
+                    <div
+                      className="bg-white h-2 rounded-full"
+                      style={{width: `${(repo.events / totalEvents) * 100}%`}}
+                    ></div>
                   </div>
-                  <div className="inline-flex justify-center items-center text-gray-300 gap-1">
-                    <GitPullRequest className="text-white  w-4 h-4" />
-                    {repo.type.PullRequestEvent}
+                  <div className="flex flex-wrap gap-2">
+                    <div className="inline-flex justify-center items-center text-gray-300 gap-1">
+                      <GitCommit className="text-white w-4 h-4" />
+                      {repo.type.PushEvent}
+                    </div>
+                    <div className="inline-flex justify-center items-center text-gray-300 gap-1">
+                      <GitBranch className="text-white  w-4 h-4" />
+                      {repo.type.CreateEvent}
+                    </div>
+                    <div className="inline-flex justify-center items-center text-gray-300 gap-1">
+                      <GitPullRequest className="text-white  w-4 h-4" />
+                      {repo.type.PullRequestEvent}
+                    </div>
+                    <div className="inline-flex justify-center items-center text-gray-300 gap-1">
+                      <Star className="text-white  w-4 h-4" />
+                      {repo.type.WatchEvent}
+                    </div>
                   </div>
-                  <div className="inline-flex justify-center items-center text-gray-300 gap-1">
-                    <Star className="text-white  w-4 h-4" />
-                    {repo.type.WatchEvent}
-                  </div>
-                </div>
+                </BorderHighlight>
               </motion.div>
             ))
           ) : (
-            <p className="text-center text-gray-300">
-              No se pudo cargar la actividad reciente 😕
-            </p>
+            <motion.div
+              initial={{opacity: 0, y: 20}}
+              animate={{opacity: 1, y: 0}}
+              transition={{duration: 0.5}}
+            >
+              <p className="text-center text-gray-300">
+                No se pudo cargar la actividad reciente 😕
+              </p>
+            </motion.div>
           )}
         </div>
       </div>
