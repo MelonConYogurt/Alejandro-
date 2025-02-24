@@ -197,4 +197,22 @@ export const projects = [
     repo: new URL("https://github.com/MelonConYogurt/api-html-pdf-generator"),
     video: "",
   },
+  {
+    title: "🎨 Pixel art",
+    description:
+      "Crea y edita arte en píxeles directamente desde el navegador.",
+    img: new URL(
+      "https://res.cloudinary.com/divr5jb7h/image/upload/v1740367385/Screenshot_2025-02-23_221153_vgfqdx.png"
+    ),
+    tecnologies: [
+      Tecnologies.ASTRO,
+      Tecnologies.TAILWIND,
+      Tecnologies.HTML,
+      Tecnologies.REACT,
+      Tecnologies.JAVASCRIPT,
+      Tecnologies.TYPESCRIPT,
+    ],
+    repo: new URL("https://github.com/MelonConYogurt/new-astro-project"),
+    video: "https://youtu.be/zEa7C0J6VsM",
+  },
 ];

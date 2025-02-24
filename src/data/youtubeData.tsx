@@ -32,4 +32,8 @@ export const youtube: Video[] = [
     title: "🕷️ Web Scraper con Interfaz Gráfica",
     url: "https://www.youtube.com/embed/Sy-Kcgu5nG0?autoplay=1&mute=1",
   },
+  {
+    title: "🎨 Pixel art",
+    url: "https://www.youtube.com/embed/zEa7C0J6VsM?autoplay=1&mute=1",
+  },
 ];

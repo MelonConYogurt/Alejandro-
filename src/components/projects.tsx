@@ -15,7 +15,7 @@ export default function AllProjects({
     <section
       id="Proyectos"
       className={`flex flex-col justify-start items-center border border-[#3d3d3d] p-5 rounded-md max-w-7xl ${
-        largePage ? "h-fit" : "h-[560px] min-h-[560px]"
+        largePage ? "max-h-[720px]" : "h-[560px] min-h-[560px] "
       } overflow-y-auto`}
     >
       <div className="flex flex-row justify-between items-center w-full mb-5  text-gray-200">
