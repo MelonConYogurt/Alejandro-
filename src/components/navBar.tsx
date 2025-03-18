@@ -70,7 +70,7 @@ function NavBar() {
                     href="mailto:alejopsornal@gmail.com"
                     className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
                   >
-                    ✉️ Contacto
+                    Contacto
                   </a>
                 </ul>
               </div>
