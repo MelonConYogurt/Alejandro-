@@ -17,6 +17,23 @@ export interface Project {
 
 export const projects = [
   {
+    title: "🎨 Pixel art editor",
+    description:
+      "Crea y edita arte en píxeles directamente desde el navegador.",
+    img: new URL(
+      "https://res.cloudinary.com/divr5jb7h/image/upload/v1740367385/Screenshot_2025-02-23_221153_vgfqdx.png"
+    ),
+    tecnologies: [
+      Tecnologies.ASTRO,
+      Tecnologies.TAILWIND,
+      Tecnologies.HTML,
+      Tecnologies.REACT,
+      Tecnologies.JAVASCRIPT,
+    ],
+    repo: new URL("https://github.com/MelonConYogurt/digital-disk"),
+    video: "https://www.youtube.com/watch?v=ChbmZNC0vTk",
+  },
+  {
     title: "🚗 Renta de Autos",
     description:
       "Plataforma innovadora para gestionar el alquiler de automóviles y reservas.",
@@ -40,6 +57,30 @@ export const projects = [
     repo: new URL("https://github.com/MelonConYogurt/cart-rent-backend"),
     video: new URL(
       "https://www.youtube.com/watch?v=28DdvMYnX4Q&t=3s&ab_channel=AlejandroVg"
+    ),
+  },
+  {
+    title: "👟 Tienda Tennis",
+    description:
+      "Ecommerce minimalista con API RESTful gestionada a través de Strapi.",
+    img: new URL(
+      "https://res.cloudinary.com/divr5jb7h/image/upload/v1738798348/64_1x_shots_so_bxgzky.png"
+    ),
+    tecnologies: [
+      Tecnologies.NEXT,
+      Tecnologies.TAILWIND,
+      Tecnologies.GIT,
+      Tecnologies.GITHUB,
+      Tecnologies.POSTGRESQL,
+      Tecnologies.TYPESCRIPT,
+      Tecnologies.STRAPI,
+      Tecnologies.CSS,
+      Tecnologies.HTML,
+      Tecnologies.REACT,
+    ],
+    repo: new URL("https://github.com/MelonConYogurt/e-commerce-frontend"),
+    video: new URL(
+      "https://www.youtube.com/watch?v=6odIauvyOmE&t=25s&ab_channel=AlejandroVg"
     ),
   },
   {
@@ -67,30 +108,7 @@ export const projects = [
       "https://www.youtube.com/watch?v=ZHEEwa6ybm0&ab_channel=AlejandroVg"
     ),
   },
-  {
-    title: "👟 Tienda Tennis",
-    description:
-      "Ecommerce minimalista con API RESTful gestionada a través de Strapi.",
-    img: new URL(
-      "https://res.cloudinary.com/divr5jb7h/image/upload/v1738798348/64_1x_shots_so_bxgzky.png"
-    ),
-    tecnologies: [
-      Tecnologies.NEXT,
-      Tecnologies.TAILWIND,
-      Tecnologies.GIT,
-      Tecnologies.GITHUB,
-      Tecnologies.POSTGRESQL,
-      Tecnologies.TYPESCRIPT,
-      Tecnologies.STRAPI,
-      Tecnologies.CSS,
-      Tecnologies.HTML,
-      Tecnologies.REACT,
-    ],
-    repo: new URL("https://github.com/MelonConYogurt/e-commerce-frontend"),
-    video: new URL(
-      "https://www.youtube.com/watch?v=6odIauvyOmE&t=25s&ab_channel=AlejandroVg"
-    ),
-  },
+
   {
     title: "📝 Blog",
     description:
@@ -196,23 +214,5 @@ export const projects = [
     ],
     repo: new URL("https://github.com/MelonConYogurt/api-html-pdf-generator"),
     video: "",
-  },
-  {
-    title: "🎨 Pixel art",
-    description:
-      "Crea y edita arte en píxeles directamente desde el navegador.",
-    img: new URL(
-      "https://res.cloudinary.com/divr5jb7h/image/upload/v1740367385/Screenshot_2025-02-23_221153_vgfqdx.png"
-    ),
-    tecnologies: [
-      Tecnologies.ASTRO,
-      Tecnologies.TAILWIND,
-      Tecnologies.HTML,
-      Tecnologies.REACT,
-      Tecnologies.JAVASCRIPT,
-      Tecnologies.TYPESCRIPT,
-    ],
-    repo: new URL("https://github.com/MelonConYogurt/new-astro-project"),
-    video: "https://youtu.be/zEa7C0J6VsM",
   },
 ];

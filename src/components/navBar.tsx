@@ -40,31 +40,31 @@ function NavBar() {
                     href="/#hero"
                     className="text-md p-2  text-gray-300 hover:text-gray-200 w-36 hover:bg-[#303030]"
                   >
-                    🏠 Inicio
+                    Inicio
                   </a>
                   <a
                     href="/#Estudios"
                     className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
                   >
-                    📚 Estudios
+                    Estudios
                   </a>
                   <a
                     href="/#Habilidades"
                     className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
                   >
-                    💪 Habilidades
+                    Habilidades
                   </a>
                   <a
                     href="/#Proyectos"
                     className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
                   >
-                    💻 Proyectos
+                    Proyectos
                   </a>
                   <a
                     href="/#Sobremi"
                     className="text-md p-2 text-gray-200 w-36 hover:bg-[#303030]"
                   >
-                    👨‍💻 Sobre mí
+                    Sobre mí
                   </a>
                   <a
                     href="mailto:alejopsornal@gmail.com"

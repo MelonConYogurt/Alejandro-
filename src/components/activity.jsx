@@ -78,7 +78,7 @@ export default function GitHubActivityTimeline() {
   }, [date]);
 
   return (
-    <div className="w-full lg:max-w-xl max-h-[720px]  mx-auto rounded-md border border-[#3d3d3d] max-h-[720px]  overflow-y-scroll">
+    <div className="w-full lg:max-w-xl max-h-[720px]  mx-auto rounded-md border border-[#3d3d3d] overflow-y-scroll">
       <div className="p-6">
         <div className="inline-flex justify-baseline gap-1">
           <h2 className=" text-white mb-6">Mi actividad de GitHub</h2>
